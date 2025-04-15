@@ -57,7 +57,7 @@ If using 70b/8b in TP2 setup and two H100s, this will load the weights between t
 
 ### Benchmarking
 
-Follow the same steps here: https://github.com/datdo-msft/azureai-maas-trtllm/blob/main/Azure%20AI%20MaaS%20-%20Llama%20%2B%20TRT-LLM%20162bb3b8f56180fba84adb4286d8c59c.md#running-benchmarks to setup a commonbench process to send requests to the inference server port specified above. 
+Follow the same steps here: https://github.com/datdo-msft/azureai-maas-trtllm/blob/main/Azure%20AI%20MaaS%20-%20Llama%20%2B%20TRT-LLM%20162bb3b8f56180fba84adb4286d8c59c.md#running-benchmarks to setup a commonbench process to send requests to the inference server port specified above. Please ensure streaming is disabled as speculative decoding currently only supports nonstreaming requests.
 
   
 
