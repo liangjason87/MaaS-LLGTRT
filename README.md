@@ -10,7 +10,7 @@ In our benchmarks, we worked with Llama 3.1 8b/Llama 3.2 1b and Llama 3.3 70b/Ll
 
 ### Quantization
 
-Download weights for both 70b/8b from HuggingFace. We are mostly following the quant/build steps here: https://github.com/datdo-msft/azureai-maas-trtllm/blob/main/Azure%20AI%20MaaS%20-%20Llama%20%2B%20TRT-LLM%20162bb3b8f56180fba84adb4286d8c59c.md, but for both models/additional parameters. Run the following command for both models:
+Download weights for both 70b/8b from HuggingFace. We are mostly following the quant/build steps here: https://github.com/datdo-msft/azureai-maas-trtllm/blob/main/Azure%20AI%20MaaS%20-%20Llama%20%2B%20TRT-LLM%20162bb3b8f56180fba84adb4286d8c59c.md, but for both models/additional parameters. If you run into model_dir issues when attempting to run this, follow steps in this issue here: https://github.com/NVIDIA/TensorRT-LLM/issues/3349. Run the following command for both models:
 
 `python /opt/TensorRT-LLM-examples/quantization/quantize.py --model_dir <path to hugging face weights> --dtype auto --qformat fp8 --kv_cache_dtype fp8 --output_dir <output directory for checkpoints> --calib_size 512 --tp_size 2 --pp_size 1`
 
