@@ -1,4 +1,4 @@
-# MaaS-LLGTRT
+# MaaS-LLGTRT: Speculative Decoding
 
 Clone this fork of llgtrt https://github.com/natehofmann/llgtrt/tree/nathof/spec-decode-support, and switch to the branch `nathof/spec-decode-support`. Please note this is still a WIP so subject to change. If something doesn't seem right, this commit should be stable: [a95315adb0d7ed836bc59ac709e9984cb82c3d5d](https://github.com/guidance-ai/llgtrt/commit/a95315adb0d7ed836bc59ac709e9984cb82c3d5d)
 
